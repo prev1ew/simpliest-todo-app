@@ -1,5 +1,6 @@
 from .models import ToDoItem
-from django.forms import ModelForm, TextInput, Textarea
+from django.forms import ModelForm, TextInput, Textarea, CheckboxInput, DateTimeInput
+from bootstrap_datepicker_plus.widgets import DateTimePickerInput
 
 
 class ToDoItemForm(ModelForm):
@@ -10,6 +11,7 @@ class ToDoItemForm(ModelForm):
             'description',
             'priority',
             'due_date',
+            'is_completed'
         ]
 
         widgets = {
@@ -21,4 +23,9 @@ class ToDoItemForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Input description'
             }),
+            "is_complete": CheckboxInput(),
+            "due_date": DateTimeInput(attrs={
+                'id': 'datetimepicker',
+                'type': 'text'
+            })
         }

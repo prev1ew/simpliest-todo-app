@@ -1,4 +1,598 @@
 {% extends 'todo_app/layout.html' %}
 {% block content %}
-<p>тут будет гдок </p>
+
+<a class="btn btn-primary" href="{% url 'index' %}" role="button"> {% if has_data%}Back to Goals{%else%}Get started{%endif%}</a> <br><br>
+
+<h1 id="h.5a9l48j1wisj"><a></a>General Information</h1>
+
+<p style="text-align: justify;">Hello again! This document contains the test for the Ruby on Rails Developer Intern position at RubyGarage, and you have 3 days to complete it.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Please, read it carefully and upload the completed task to the private repository on GitHub that we sent you access to. We also ask you to send a link to Heroku (mandatory action) so we can check the functionality of the application. More details about contacts to send your link you will receive from the RubyGarage representative. </p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">We wish you good luck and inspiration.</p>
+
+<h1 id="h.fo2qgaj4acp5"><a></a>Product Info</h1>
+
+<p>Product name: web app - <span style="font-style: italic;">‘BeFocused’</span></p>
+<p>Industry: Education</p>
+<p>Product Type: <span style="font-weight: 400;">To-do list, task manager</span></p>
+<p>Main Business Domains: Education</p>
+
+<h1 id="h.827t8y2zml9g"><a></a>Product Vision</h1>
+
+<p style="text-align: justify;">Here, at RubyGarage we know how important it is to constantly upgrade your skills. Achieving a lot without losing focus is the main goal of any self-education process. We are sure that people never stop learning and we really want to help those who thrive for knowledge. All of us are students and learners along our path in life. That’s why we want to introduce an app - <span style="font-style: italic; font-weight: 700;">‘BeFocused’.</span>&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">App - <span style="font-style: italic; font-weight: 700;">‘BeFocused’</span>&nbsp;is a convenient centralized personal space for any students, learners, or others interested in self-education and self-development. It empowers users to set goals, track them and complete them without losing focus. </p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Users can easily control their progress, see what’s up to be done next and see how much time is left by seeing the due dates. It allows them to plan their education, tasks, and progress.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">FOR Students, learners</p>
+<p style="text-align: justify;"><strong>WHO </strong>wants&nbsp;to keep track of their educational goals and manage them</p>
+<p style="text-align: justify;"><strong>THE </strong>app ‘BeFocused’</p>
+<p style="text-align: justify;">IS A <span style="font-weight: 400;">convenient to-do list </span></p>
+<p style="text-align: justify;">THAT <span style="font-weight: 400;">&nbsp;allows creating, editing, deleting, and managing goals that the user wants to achieve</span></p>
+<p style="text-align: justify;">UNLIKE </p>
+
+<ul><li style="text-align: justify;">Keeping track of the goals in the notebook</li>
+<li style="text-align: justify;">Memorizing all of them</li>
+</ul>
+
+<p style="text-align: justify;">OUR PRODUCT </p>
+
+<ul><li style="text-align: justify;">Allows to easily see all incomplete &amp; complete goals in one centralized list</li>
+<li style="text-align: justify;">Set priorities and due dates which help manage the educational process</li>
+<li style="text-align: justify;">Mark goals as ‘Complete’ to see which goals are not achieved yet</li>
+<li style="text-align: justify;">Provides the possibility to share one’s own educational goals with friends easily</li>
+</ul>
+
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+
+<h1 id="h.ayg2aw8irtbv" style="text-align: justify;"><a></a>Features Breakdown List</h1>
+
+<a></a><a></a>
+<table style="border-spacing:0;border-collapse:collapse;margin-right:auto"><tbody><tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:178.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Epic</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:289.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Use Case</p>
+</td></tr>
+<tr style="height:21pt"><td colspan="2" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#d9d9d9;border-left-style:solid;border-bottom-width:1pt;width:468pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">User role - User</p>
+</td></tr>
+<tr style="height:21pt"><td colspan="1" rowspan="2" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:178.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">page view</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:289.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">View the About page</p>
+</td></tr>
+<tr style="height:21pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:289.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">View empty state for ‘My Goals’ page</p>
+</td></tr>
+<tr style="height:21pt"><td colspan="1" rowspan="5" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:178.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">manage goals</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:289.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Create a goal</p>
+</td></tr>
+<tr style="height:21pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:289.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">View list of goals</p>
+</td></tr>
+<tr style="height:21pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:289.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">&nbsp;View goal</p>
+</td></tr>
+<tr style="height:21pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:289.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Edit a goal</p>
+</td></tr>
+<tr style="height:21pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:289.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Delete a goal</p>
+</td></tr>
+</tbody>
+</table>
+
+
+<h1 id="h.kit45eupkeg5"><a></a>Technical Requirements</h1>
+
+
+<ul><li style="text-align: justify;">It should be a WEB application</li>
+<li style="text-align: justify;">For the client-side must be used:</li>
+</ul>
+
+
+<ul><li style="text-align: justify;">HTML, CSS (any libs as Twitter Bootstrap, Blueprint ...),</li>
+<li style="text-align: justify;">JavaScript (any libs as jQuery, Prototype ...)</li>
+</ul>
+
+
+<ul><li style="text-align: justify;">For a server-side any language as Ruby, PHP, Python, JavaScript, C#, Java ...</li>
+<li style="text-align: justify;">It should have a client-side and server-side validation</li>
+<li style="text-align: justify;">It should look like on mockups</li>
+</ul>
+
+<p style="text-align: justify;">&nbsp;</p>
+
+<h1 id="h.cpjasrau5mqq"><a></a>Test Checklists</h1>
+
+<p style="text-align: justify;">This checklist is used to check if you performed the test correctly. A completed test is considered correct under these conditions:</p>
+<p style="text-align: justify;">&nbsp;</p>
+
+<ul><li style="text-align: justify;">When you open the app you see the first page - the "about" page, which looks according to the <a href="https://www.google.com/url?q=https://projects.invisionapp.com/share/SGTE2BUYAQ4%23/screens/378311649_Home-1440&amp;sa=D&amp;source=editors&amp;ust=1655328910775239&amp;usg=AOvVaw1SWK6Gb0s2ZbEhJZuc1uHq" target="_blank">mockup</a></li>
+<li style="text-align: justify;">Clicking on “Get started” button opens the <a href="https://www.google.com/url?q=https://projects.invisionapp.com/share/SGTE2BUYAQ4%23/screens/378312229_Goals_List-Empty-1440&amp;sa=D&amp;source=editors&amp;ust=1655328910775724&amp;usg=AOvVaw0KmZua88gCUDJHkSHu3KJD" target="_blank">“My Goals”</a>&nbsp;page without goals</li>
+<li style="text-align: justify;">Checking the possibility of creating/edition/deleting Goal</li>
+<li style="text-align: justify;">Checking the Done function for the Goal </li>
+<li style="text-align: justify;">Checking the deadline function by clicking on the calendar to select the date</li>
+<li style="text-align: justify;">Check the ability to change the priority of Goal</li>
+<li style="text-align: justify;">When at least one goal has been created, the ”Get started” button on the “About” page changes its name to “Back to Goals”</li>
+<li style="text-align: justify;">Clicking on “Back to Goals” button opens the “My Goals”&nbsp;page with goals list</li>
+</ul>
+
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">The table below describes the “Priority”, “Steps”, Expected Result of the candidate application, and also contains an &nbsp;“Item passed?” column which indicates whether the declared functionality matches the Expected Result.</p>
+<p>&nbsp;</p>
+<a></a><a></a>
+<table style="border-spacing:0;border-collapse:collapse;margin-right:auto"><tbody><tr style="height:35.2pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Priority</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Steps</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Expected Result</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Item passed?</p>
+</td></tr>
+<tr style="height:15pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">low</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>1. Does the app conform to mockups</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>The design of the app is identical or as close as possible to the mockups</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>-</p>
+</td></tr>
+<tr style="height:27pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">high</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>2. It is possible to create a goal </p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>The goal is created after clicking on the corresponding button.</p>
+<p>You can create an unlimited number of goals</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>+</p>
+</td></tr>
+<tr style="height:15pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">high</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>3. The result is saved after refreshing the page</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>After refreshing the page, all changes made earlier are saved</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>+</p>
+</td></tr>
+<tr style="height:27pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">high</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>4. It is possible to edit the goal title</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>After clicking on the edit button, it becomes possible to change the title of the goal</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>+</p>
+</td></tr>
+<tr style="height:15pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">high</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>5. It is possible to delete the goal</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>After clicking on the delete button, the goal disappears</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>+</p>
+</td></tr>
+<tr style="height:27pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">high</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>6. It is possible to edit the goal description</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>After clicking on the edit button, it becomes possible to change the description of the goal</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>+</p>
+</td></tr>
+<tr style="height:15pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">high</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>7. It is possible to mark a Goal as completed</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>After clicking on the corresponding button - the goal is marked as completed</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>+</p>
+</td></tr>
+<tr style="height:15pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">high</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>8. It is possible to edit the goal priority</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>After clicking on the edit button, it becomes possible to change the priority of the goal</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>+</p>
+</td></tr>
+<tr style="height:15pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">high</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>10.” Get started” button on the “About” page changes its name</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>When at least one goal has been created, the ”Get started” button on the “About” page changes its name to “Back to Goals”</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>+</p>
+</td></tr>
+<tr style="height:15pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">low</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>11. It is possible to edit the goal deadline</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>After clicking on the edit button, it becomes possible to change the deadline of the goal</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>+</p>
+</td></tr>
+<tr style="height:15pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">high</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>12. It is possible to back to the “About” page</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>After clicking on the corresponding button in the “My Goals” page - opens the “About” page</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>+</p>
+</td></tr>
+<tr style="height:15pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:60pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">high</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:133.5pt;border-top-color:#000000;border-bottom-style:solid"><p>13. It is possible to filter goals on the “My Goals” page</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:219.8pt;border-top-color:#000000;border-bottom-style:solid"><p>After clicking on the corresponding buttons &nbsp;- the page displays goals according to the selected filtering</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:2pt 2pt 2pt 2pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:63pt;border-top-color:#000000;border-bottom-style:solid"><p>Particularly (only by Completed / IncomplpedGoal) state. But not the name, date, or priority</p>
+</td></tr>
+</tbody>
+</table>
+
+
+<h1 id="h.wh147zj2wiz6"><a></a>User Stories</h1>
+
+
+<h3 id="h.eq7qjni38zbg"><a></a>#1 User Story: View the About page</h3>
+
+<p style="text-align: justify;">As&nbsp;a<span style="font-weight: 400;">&nbsp;user</span></p>
+<p style="text-align: justify;">I want&nbsp;to be able to<span style="font-weight: 400;">&nbsp;view the About page</span></p>
+<p style="text-align: justify;">So that <span style="font-weight: 400;">I could get acquainted with the app description, SMART-goals and get started</span></p>
+<p style="text-align: justify;"><strong>Mockups:</strong>&nbsp;<a href="https://www.google.com/url?q=https://invis.io/SGTE2BUYAQ4%23/378312053_About-1440&amp;sa=D&amp;source=editors&amp;ust=1655328910793915&amp;usg=AOvVaw0qcQM_2K6omlzJOXd5OoUz" target="_blank">‘About’ page mockup</a></p>
+
+<h6 id="h.9arve99s6m5h" style="text-align: justify;"><a></a>Scenario: User views About Page </h6>
+
+<p style="text-align: justify;">Given<span style="font-weight: 400;">&nbsp;I am a user of app</span></p>
+<p style="text-align: justify;">When I open the app</p>
+<p style="text-align: justify;"><strong>Then</strong><strong>&nbsp;</strong>I can see the <span style="font-style: italic;">About Page Contents</span>.</p>
+
+<h6 id="h.jflg4sjq2nrt"><a></a><span>About Page</span>&nbsp;Contents</h6>
+
+<a></a><a></a>
+<table style="margin-left:-12.8pt;border-spacing:0;border-collapse:collapse;margin-right:auto"><tbody><tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:97.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Section Name</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:252.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Section Description</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:145.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Context Notes</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:97.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Header</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:252.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Is a header which is displayed at all pages of the app: About</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:145.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;"><span>Contains </span><span>‘BeFocused’</span><span style="font-weight:700">&nbsp;</span><span>App </span><span>Logo</span>, ‘About’ clickable link </p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:97.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Title</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:252.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">The name of the App</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:145.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">---</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:97.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Description</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:252.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Provides a brief description of the app and the SMART goals</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:145.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;"><span>&lt;meta name="description" content="” /&gt; </span>не вьіполнено</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:97.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Get Started</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:252.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">---</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:145.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">A clickable button which leads to ‘My Goals’ page</p>
+</td></tr>
+</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3 id="h.hg5fatyl63wk"><a></a><span>#2 </span>User Story: View empty state for ‘My Goals’ page</h3>
+
+<p>The design differs from the mockup</p>
+<p style="text-align: justify;">As&nbsp;a<span style="font-weight: 400;">&nbsp;user</span></p>
+<p style="text-align: justify;">I want&nbsp;to be able to<span style="font-weight: 400;">&nbsp;view an empty state for ‘My Goals’ page</span></p>
+<p style="text-align: justify;">So that <span style="font-weight: 400;">I could be aware that I don’t have any goals and I should create some</span></p>
+<p style="text-align: justify;">Mockup: <a href="https://www.google.com/url?q=https://invis.io/SGTE2BUYAQ4%23/378312229_Goals_List-Empty-1440&amp;sa=D&amp;source=editors&amp;ust=1655328910799888&amp;usg=AOvVaw3WmbFtrs4uCtHDexobSdng" target="_blank">Goals List empty state</a></p>
+
+<h6 id="h.grnbt877qic"><a></a>Scenario: User views an empty My Goals page</h6>
+
+<p style="text-align: justify;">Given<span style="font-weight: 400;">&nbsp;I have no created goals </span></p>
+<p style="text-align: justify;">And <span style="font-weight: 400;">I’m in the app About Page</span></p>
+<p style="text-align: justify;"><strong>When </strong>I click on&nbsp;Get Started</p>
+<p style="text-align: justify;">Then<span style="font-weight: 400;">&nbsp;I am navigated to My Goals page</span></p>
+<p style="text-align: justify;"><strong>And </strong>I<strong>&nbsp;</strong>can see a blank page with a message ‘<span style="font-style: italic;">You have no goals. Not going to lie, this is a bit sad’</span>.</p>
+<p>&nbsp;</p>
+
+<h3 id="h.5hdwnm19bbo9"><a></a><span>#3 </span>User Story: Create a goal</h3>
+
+<p>The design differs from the mockup</p>
+<p style="text-align: justify;">As&nbsp;a<span style="font-weight: 400;">&nbsp;user</span></p>
+<p style="text-align: justify;">I want&nbsp;to be able to<span style="font-weight: 400;">&nbsp;create a goal</span></p>
+<p style="text-align: justify;">So that <span style="font-weight: 400;">I could add goals to my self-development program</span></p>
+<p style="text-align: justify;">Mockup: <a href="https://www.google.com/url?q=https://invis.io/SGTE2BUYAQ4%23/378313224_Create_Goal-1440&amp;sa=D&amp;source=editors&amp;ust=1655328910801976&amp;usg=AOvVaw365EIxlvz1dkN6QoHubisN" target="_blank">‘Create a goal’ mockup</a></p>
+
+<h6 id="h.2q5bfu2jwo8g" style="text-align: justify;"><a></a>Scenario: User creates a goal</h6>
+
+<p style="text-align: justify;">Given<span style="font-weight: 400;">&nbsp;I am on the My Goals page</span></p>
+<p style="text-align: justify;">When <span style="font-weight: 400;">I click ‘Create a Goal’</span></p>
+<p style="text-align: justify;">Then<span style="font-weight: 400;">&nbsp;I am navigated to the ‘Create a goal’ page</span></p>
+<p style="text-align: justify;">And <span style="font-weight: 400;">I can see the ‘Create a goal’ form</span></p>
+
+<h6 id="h.d9r4yi9a32f6" style="text-align: justify;"><a></a>‘Create a goal’ form</h6>
+
+<a></a><a></a>
+<table style="margin-left:-15pt;border-spacing:0;border-collapse:collapse;margin-right:auto"><tbody><tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:94.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Section Name</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:220.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Section Description</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:57pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Data Type</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:122.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Context Notes</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:94.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Goal Title</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:220.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">The general description of the goal</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:57pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Text</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:122.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">—</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:94.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Description</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:220.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">A more detailed explanation of what needs to be done and any additional info</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:57pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Textarea</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:122.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">—</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:94.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Due Date</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:220.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">The field that displays the deadline when the goal must be completed</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:57pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Date</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:122.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;"><span>Format: DD.MM.YYYY eg </span>19.01.2023</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:94.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Priority</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:220.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Displays the level of the goal priority</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:57pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Select</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:122.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Can be High, Medium, and Low</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:94.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Create</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:220.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">A clickable button that creates a goal</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:57pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Button</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:122.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">---</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:94.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Cancel</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:220.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">A clickable button, when pressed discards the form and navigates the user back to the My Goals page</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:57pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Button</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:122.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">---</p>
+</td></tr>
+</tbody>
+</table>
+
+<p>&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>When </strong>I fill in the ‘Goal Title’, eg <span style="font-style: italic;">‘Learn RSpec’</span></p>
+<p style="text-align: justify;"><strong>And </strong>I fill in the ‘Description’ eg <span style="font-style: italic;">‘I want to learn RSpec to test my code’</span></p>
+<p style="text-align: justify;"><strong>And</strong>&nbsp;I select the date in the ‘Due Date’ field</p>
+<p style="text-align: justify;"><strong>And </strong>I select the priority in the ‘Priority’ dropdown</p>
+<p style="text-align: justify;">And <span style="font-weight: 400;">I click on the ‘Create’ button</span></p>
+<p style="text-align: justify;">Then<span style="font-weight: 400;">&nbsp;I am navigated to the ‘My Goals’ page</span></p>
+<p style="text-align: justify;"><strong>And </strong>I can see ‘<span style="font-style: italic;">Your goal has been successfully created’</span>&nbsp;success message</p>
+<p style="text-align: justify;"><strong>And</strong>&nbsp;I can see my goal <span style="font-style: italic;">‘Learn RSpec’</span>&nbsp;in the goals list</p>
+
+<h6 id="h.9nvysidpyiup" style="text-align: justify;"><a></a>Scenario: User tries to create a goal without filling in all necessary field</h6>
+
+<p style="text-align: justify;">Given<span style="font-weight: 400;">&nbsp;I am in the Create a Goal page</span></p>
+<p style="text-align: justify;">When <span style="font-weight: 400;">I fill in not all fields</span></p>
+<p style="text-align: justify;">And <span style="font-weight: 400;">I press the ‘Create’ button</span></p>
+<p style="text-align: justify;"><strong>Then</strong>&nbsp;the system displays a message <span style="font-style: italic;">‘Please fill in all necessary fields’*</span></p>
+<p style="text-align: justify;">*All fields in the ‘Create a goal’ form are necessary</p>
+
+<h3 id="h.gygg87c0tx8i"><a></a><span>#4 </span><span>User Story: View list of goals<br></span>The design differs from the mockup</h3>
+
+<p style="text-align: justify;">As&nbsp;a<span style="font-weight: 400;">&nbsp;user</span></p>
+<p style="text-align: justify;">I want&nbsp;to be able to<span style="font-weight: 400;">&nbsp;view the list of goals</span></p>
+<p style="text-align: justify;">So that <span style="font-weight: 400;">I could keep track of my complete &amp; incomplete goals, create, edit or delete them to control the scope of my self-education.</span></p>
+<p style="text-align: justify;">Mockups: <a href="https://www.google.com/url?q=https://invis.io/SGTE2BUYAQ4%23/378312232_Goals_List-All_Goals-1440&amp;sa=D&amp;source=editors&amp;ust=1655328910813765&amp;usg=AOvVaw0y66dEUylzZVseleyIty6i" target="_blank">Goals List - All Goals</a></p>
+<p style="text-align: justify;"><a href="https://www.google.com/url?q=https://invis.io/SGTE2BUYAQ4%23/378312230_Goals_List-Incomplete_Goals-1440&amp;sa=D&amp;source=editors&amp;ust=1655328910813993&amp;usg=AOvVaw3y0546sT_AB6clxUFx0UO2" target="_blank">Goals List - Incomplete goals</a><br><a href="https://www.google.com/url?q=https://invis.io/SGTE2BUYAQ4%23/378312231_Goals_List-Completed_Goals-1440&amp;sa=D&amp;source=editors&amp;ust=1655328910814138&amp;usg=AOvVaw36eS98jBQ3Vx36uXv7KHD5" target="_blank">Goals List - Completed goals</a></p>
+
+<h6 id="h.x1nu2bxhsp8g" style="text-align: justify;"><a></a>Scenario: User views the list of goals</h6>
+
+<p style="text-align: justify;">Given<span style="font-weight: 400;">&nbsp;I’m in the app About Page</span></p>
+<p style="text-align: justify;"><strong>And </strong>I have a completed goal <span style="font-style: italic;">‘Learn RSpec’</span><br><strong>And </strong>I have an incomplete goal <span style="font-style: italic;">‘Learn Trailblazer’</span></p>
+<p style="text-align: justify;">When <span style="font-weight: 400;">I click on ‘Back to Goals’ button</span></p>
+<p style="text-align: justify;"><strong>Then</strong>&nbsp;I can see my complete goal <span style="font-style: italic;">‘Learn RSpec’</span>&nbsp;in the list of my completed goals</p>
+<p style="text-align: justify;"><strong>And </strong>I can see my incomplete goal <span style="font-style: italic;">‘Learn Trailblazer’</span>&nbsp;in the list of my incomplete goals</p>
+<p style="text-align: justify;"><strong>And</strong>&nbsp;I can see my&nbsp;all goals in the list of my all goals</p>
+<p style="text-align: justify;"><strong>And </strong>each goal has <a href="#h.zc1nhj9m55j3" target="_blank">this structure</a></p>
+<p style="text-align: justify;"><strong>And </strong>I can see <span style="font-style: italic; font-weight: 700;">12</span>&nbsp;as the number of goals displayed next to the ‘<span style="font-style: italic;">All’</span></p>
+<p style="text-align: justify;"><strong>And </strong>I can see <span style="font-style: italic; font-weight: 700;">6</span>&nbsp;as the number of goals displayed next to the ‘<span style="font-style: italic;">Complete’</span></p>
+<p style="text-align: justify;"><strong>And </strong>I can see <span style="font-style: italic; font-weight: 700;">6</span>&nbsp;as the number of goals displayed next to the ‘<span style="font-style: italic;">Incomplete’</span></p>
+
+<h6 id="h.8w2hr7tg5azw" style="text-align: justify;"><a></a>Scenario: User applies filters to the goals’ list</h6>
+
+<p style="text-align: justify;">Given<span style="font-weight: 400;">&nbsp;I’m in the Goals List page</span></p>
+<p style="text-align: justify;"><strong>And </strong>I have a completed goal <span style="font-style: italic;">‘Learn RSpec’</span><br><strong>And </strong>I have an incomplete goal <span style="font-style: italic;">‘Learn Trailblazer’</span></p>
+<p style="text-align: justify;">When <span style="font-weight: 400;">I filter goals by ‘Complete’</span></p>
+<p style="text-align: justify;"><strong>Then</strong>&nbsp;I can see my complete goal <span style="font-style: italic;">‘Learn RSpec’</span>&nbsp;in the list of my goals</p>
+<p style="text-align: justify;"><strong>And </strong>I cannot see my incomplete goal <span style="font-style: italic;">‘Learn Trailblazer’</span>&nbsp;in the list</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">When <span style="font-weight: 400;">I filter goals by ‘Incomplete’</span></p>
+<p style="text-align: justify;"><strong>Then</strong>&nbsp;I can see my incomplete goal <span style="font-style: italic;">‘Learn Trailblazer’</span>&nbsp;in the list of my goals</p>
+<p style="text-align: justify;"><strong>And </strong>I cannot see my complete goal <span style="font-style: italic;">‘Learn RSpec’</span>&nbsp;in the list</p>
+
+<h6 id="h.zc1nhj9m55j3" style="text-align: justify;"><a></a>‘Goal’ ticket structure</h6>
+
+<a></a><a></a>
+<table style="margin-left:-12pt;border-spacing:0;border-collapse:collapse;margin-right:auto"><tbody><tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:110.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Section Name</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:231pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Section Description</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:175.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Context Notes</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:110.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Checkbox</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:231pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Displays if the goal is complete or incomplete (status)</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:175.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Checkbox Icon (not clickable)</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:110.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Goal Title</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:231pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Describes the main idea of the goal</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:175.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Text</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:110.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Due Date</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:231pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">The field that displays the deadline when the goal must be completed</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:175.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Format: DD.MM.YYYY eg 19.01.2023</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:110.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Priority</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:231pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Displays the level of the goal priority</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:175.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Can be High, Medium and Low</p>
+</td></tr>
+</tbody>
+</table>
+
+
+<h6 id="h.4colwvlp8q31" style="text-align: justify;"><a></a>Sorting of the list</h6>
+
+
+<ul><li style="text-align: justify;">Default sorting - by due date DESC</li>
+<li style="text-align: justify;">If two goals have the same due date, then the goal with a higher priority is on top;</li>
+<li style="text-align: justify;">If the goals have the same due date and the same priority, then they are sorted by alphabet ASC.</li>
+</ul>
+
+
+<h3 id="h.nwp913iu25yn"><a></a><span>#5 </span><span>User Story: View goal<br></span>The design differs from the mockup</h3>
+
+<p style="text-align: justify;">As a<span style="font-weight: 400;">&nbsp;user</span></p>
+<p style="text-align: justify;">I want to be able to<span style="font-weight: 400;">&nbsp;view a goal</span></p>
+<p style="text-align: justify;">So that<span style="font-weight: 400;">&nbsp;I could see the goal description and access more options like edit or delete</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Mockup: <a href="https://www.google.com/url?q=https://invis.io/SGTE2BUYAQ4%23/378314705_View_Goal-1440&amp;sa=D&amp;source=editors&amp;ust=1655328910823955&amp;usg=AOvVaw0AG8l5xotXN_SR9R2QGAVh" target="_blank">‘View a goal’ mockup</a></p>
+
+<h6 id="h.oudfyx4uqu1z" style="text-align: justify;"><a></a>Scenario: User views a goal </h6>
+
+<p style="text-align: justify;"><strong>Given</strong>&nbsp;I have a goal <span style="font-style: italic;">‘Learn RSpec’</span></p>
+<p style="text-align: justify;">And<span style="font-weight: 400;">&nbsp;I am on the My Goals page</span></p>
+<p style="text-align: justify;"><strong>When </strong>I click on the goal ticket <span style="font-style: italic;">‘Learn RSpec’</span></p>
+<p style="text-align: justify;">Then<span style="font-weight: 400;">&nbsp;I am navigated to the ‘Goal View’ page</span></p>
+
+<h6 id="h.1tyfqoob2bb" style="text-align: justify;"><a></a>‘Goal View’ page</h6>
+
+<a></a><a></a>
+<table style="border-spacing:0;border-collapse:collapse;margin-right:auto"><tbody><tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:93pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Section Name</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:192pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Section Description</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:67.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Data Type</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:153pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Context Notes</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:93pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Back to My Goals</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:192pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">A clickable link that leads back to ‘My Goals’ page</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:67.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Link</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:153pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Contains ‘My Goals’ page link</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:93pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Goal Title</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:192pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">The general description of the goal</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:67.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Text</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:153pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">—</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:93pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Description</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:192pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">A more detailed explanation of what needs to be done and any additional info</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:67.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Textarea</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:153pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">—</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:93pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Due Date</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:192pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">The field that displays the deadline when the goal must be completed</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:67.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Date</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:153pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;"><span>Format: DD.MM.YYYY eg </span>19.01.2023</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:93pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Priority</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:192pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Displays the level of the goal priority</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:67.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Select</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:153pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Can be High, Medium and Low</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:93pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Edit</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:192pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Provides access to editing goals</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:67.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Button</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:153pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Contains ‘Edit a goal’ link</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:93pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Delete</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:192pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Provides access to deleting goals</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:67.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Button</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:153pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Contains ‘Delete a goal’ link</p>
+</td></tr>
+</tbody>
+</table>
+
+
+<h3 id="h.ur672hco26t3"><a></a><span>#6 </span><span>User Story: Edit a goal<br></span>The design differs from the mockup</h3>
+
+<p style="text-align: justify;">As&nbsp;a<span style="font-weight: 400;">&nbsp;user</span></p>
+<p style="text-align: justify;">I want&nbsp;to be able to<span style="font-weight: 400;">&nbsp;edit a goal</span></p>
+<p style="text-align: justify;">So that <span style="font-weight: 400;">I could change its description or manage other fields I find useful</span></p>
+<p style="text-align: justify;">Mockup: <a href="https://www.google.com/url?q=https://invis.io/SGTE2BUYAQ4%23/378314973_Edit_Goal-1440&amp;sa=D&amp;source=editors&amp;ust=1655328910835844&amp;usg=AOvVaw0I9fofsuQIXHH_20Q5MG8B" target="_blank">‘Edit a goal’ mockup</a></p>
+
+<h6 id="h.9w48yl1b6hi" style="text-align: justify;"><a></a>Scenario: User edits a goal</h6>
+
+<p style="text-align: justify;"><strong>Given</strong>&nbsp;I have a goal <span style="font-style: italic;">‘Learn RSpec’</span></p>
+<p style="text-align: justify;"><strong>And </strong>I am in the <span style="font-style: italic;">‘Learn RSpec’ </span>goal view page</p>
+<p style="text-align: justify;">When &nbsp;<span style="font-weight: 400;">I select ‘Edit a goal’</span></p>
+<p style="text-align: justify;">Then<span style="font-weight: 400;">&nbsp;I get navigated to the Edit page</span></p>
+<p style="text-align: justify;">And <span style="font-weight: 400;">I can see the ‘Edit a goal’ form (all fields are pre-filled with the info, that the goal currently has)</span></p>
+
+<h6 id="h.d6wdgx89vtzg" style="text-align: justify;"><a></a>‘Edit a goal’ form</h6>
+
+<a></a><a></a>
+<table style="border-spacing:0;border-collapse:collapse;margin-right:auto"><tbody><tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:92.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Section Name</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:270pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Section Description</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:129pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Context Notes</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:92.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Goal Title</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:270pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">The general description of the goal</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:129pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;"><span>Text. eg </span>‘Learn RSpec’</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:92.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Description</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:270pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">A more detailed explanation of what needs to be done and any additional info (eg links)</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:129pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;"><span>Text. eg </span>‘I want to learn RSpec to test my code’</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:92.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Due Date</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:270pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">The field that displays the deadline when the goal must be completed</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:129pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;"><span>Format: DD.MM.YYYY eg </span>19.01.2023</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:92.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Priority</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:270pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Displays the level of the goal priority</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:129pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;"><span>Can be High, Medium and Low. eg </span>High</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:92.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Save</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:270pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">A clickable button that saves a goal edits</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:129pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">&nbsp;</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:92.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Cancel</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:270pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">A clickable button, when pressed discards the form and navigates the user back to the ‘My Goals’ page</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:129pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">&nbsp;</p>
+</td></tr>
+</tbody>
+</table>
+
+<p>&nbsp;</p>
+<p style="text-align: justify;">When I&nbsp;<span style="font-weight: 400;">edit any fields that I want</span></p>
+<p style="text-align: justify;">And <span style="font-weight: 400;">I press the ‘Save’ button</span></p>
+<p style="text-align: justify;">Then<span style="font-weight: 400;">&nbsp;I get navigated to the ‘My Goals’ page</span></p>
+<p style="text-align: justify;"><strong>And </strong>I can see the <span style="font-style: italic;">‘Your goal has been successfully updated’</span>&nbsp;success message</p>
+<p style="text-align: justify;"><strong>And </strong>I can see my goal <span style="font-style: italic;">‘Learn RSpec’ </span>in the list with the fields updated according to the edits I made </p>
+
+<h3 id="h.s956k9vyi1eg"><a></a><span>#7 </span>User Story: Delete a goal</h3>
+
+<p style="text-align: justify;">As&nbsp;a<span style="font-weight: 400;">&nbsp;user</span></p>
+<p style="text-align: justify;">I want&nbsp;to be able to<span style="font-weight: 400;">&nbsp;delete a goal</span></p>
+<p style="text-align: justify;">So that <span style="font-weight: 400;">I could cleanse my list of the goals I don’t need anymore</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Mockup: <a href="https://www.google.com/url?q=https://invis.io/SGTE2BUYAQ4%23/378315137_Delete_Goal-1440&amp;sa=D&amp;source=editors&amp;ust=1655328910847446&amp;usg=AOvVaw1nIXLIyQ3l23om_3bX1oWA" target="_blank">‘Delete a goal’ mockup</a></p>
+
+<h6 id="h.j4kqdphs9ws3" style="text-align: justify;"><a></a>Scenario: User deletes a goal</h6>
+
+<p style="text-align: justify;"><strong>Given</strong>&nbsp;I have a goal <span style="font-style: italic;">‘Learn RSpec’</span></p>
+<p style="text-align: justify;"><strong>And </strong>I am on the <span style="font-style: italic;">‘Learn RSpec’ </span>goal view page</p>
+<p style="text-align: justify;"><strong>When </strong>I select ‘Delete a goal’ </p>
+<p style="text-align: justify;">Then<span style="font-weight: 400;">&nbsp;I can see the ‘Delete a goal’ confirmation dialogue</span></p>
+
+<h6 id="h.kzoxc8akrm2m" style="text-align: justify;"><a></a>‘Delete a goal’ confirmation dialogue</h6>
+
+<a></a><a></a>
+<table style="border-spacing:0;border-collapse:collapse;margin-right:auto"><tbody><tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:79.5pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Section</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:294.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Value</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:93.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Notes</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:79.5pt;border-top-color:#000000;border-bottom-style:solid"><p>Title</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:294.8pt;border-top-color:#000000;border-bottom-style:solid"><p>Are you sure you want to delete this goal?</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:93.8pt;border-top-color:#000000;border-bottom-style:solid"><p>-</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:79.5pt;border-top-color:#000000;border-bottom-style:solid"><p>Confirm</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:294.8pt;border-top-color:#000000;border-bottom-style:solid"><p>Yes</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:93.8pt;border-top-color:#000000;border-bottom-style:solid"><p>-</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:79.5pt;border-top-color:#000000;border-bottom-style:solid"><p>Cancel</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:294.8pt;border-top-color:#000000;border-bottom-style:solid"><p>Cancel</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:93.8pt;border-top-color:#000000;border-bottom-style:solid"><p>-</p>
+</td></tr>
+</tbody>
+</table>
+
+<p>&nbsp;</p>
+<p style="text-align: justify;">When <span style="font-weight: 400;">I click on the ‘Yes’ button</span></p>
+<p style="text-align: justify;">Then I get navigated to the ‘My Goals’ page</p>
+<p style="text-align: justify;"><strong>And </strong>I can see the <span style="font-style: italic;">‘Your goal has been successfully deleted’</span>&nbsp;success message</p>
+<p style="text-align: justify;"><strong>And </strong>I can’t see my goal <span style="font-style: italic;">‘Learn RSpec’</span>&nbsp;in the list</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">When<span style="font-weight: 400;">&nbsp;I click the ‘Cancel’ button</span></p>
+<p style="text-align: justify;">Then<span style="font-weight: 400;">&nbsp;the confirmation dialogue collapses</span></p>
+<p style="text-align: justify;">And <span style="font-weight: 400;">I can see the ‘My Goals’ page</span></p>
+<p style="text-align: justify;"><strong>And </strong>I can see a goal <span style="font-style: italic;">‘Learn RSpec’</span>&nbsp;in the list</p>
+
+<h1 id="h.o93tkc3kqoiz"><a></a><span>Validation Rules<br></span>The is not validated by regexp used for a title</h1>
+
+<a></a><a></a>
+<table style="border-spacing:0;border-collapse:collapse;margin-right:auto"><tbody><tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:69.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Property</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#c9daf8;border-left-style:solid;border-bottom-width:1pt;width:422.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: center;">Validation Rules</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:69.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Goal Title</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:422.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Should not be empty,</p>
+<p style="text-align: justify;">Consist of a-z, A-Z, 0-9, or one of !#$%&amp;'*+-/=?^_`{|}~.</p>
+<p style="text-align: justify;">Must be less than 80 characters. </p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:69.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Description</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:422.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Should not be empty,</p>
+<p style="text-align: justify;">Consist of a-z, A-Z, 0-9, or one of !#$%&amp;'*+-/=?^_`{|}~.</p>
+<p style="text-align: justify;">Must be less than 500 characters.</p>
+</td></tr>
+<tr style="height:0pt"><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:69.8pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Due Date</p>
+</td><td colspan="1" rowspan="1" style="border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:422.2pt;border-top-color:#000000;border-bottom-style:solid"><p style="text-align: justify;">Should not be empty.Cannot be earlier than today, a year cannot be more than 2100 </p>
+</td></tr>
+</tbody>
+</table>
+
+
+<h1 id="h.6zbdiqxed4i"><a></a>Notes</h1>
+
+
+<ol start="1"><li style="text-align: justify;">Date picker, dropdown, and pop-up (confirmation messages) are standard browsers’, no need to create them in HTML templates.</li>
+<li style="text-align: justify;">Footer in ‘Create Goal’ page is anchored (always at the bottom)</li>
+<li style="text-align: justify;">Infinite scroll in the Goals List page.</li>
+</ol>
+
 {% endblock %}

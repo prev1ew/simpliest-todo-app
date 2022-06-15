@@ -1,0 +1,19 @@
+{% extends 'todo_app/layout.html' %}
+{% block content %}
+
+   <a class="btn btn-primary" href="{% url 'index' %}" role="button"> <- Go Back</a> <br><br>
+   <h2>{%if method == "create"%}Create{%else%}Change{%endif%} Goal</h2>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">{%if method == "create"%}Create{%else%}Edit{%endif%}</button>
+    <span>{{error}}</span>
+  </form>
+
+ <script>
+    $(function () {
+      $("#datetimepicker").datetimepicker();
+    });
+  </script>
+{% endblock %}
